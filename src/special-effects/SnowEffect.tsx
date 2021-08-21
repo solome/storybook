@@ -12,15 +12,22 @@ const randomRange = (min: number, max: number) => Math.random() * (max - min) + 
 export function snow(container: HTMLDivElement, { amount = 360, fallSpeen = 2 }) {
 	const width = container.clientWidth
 	const height = container.clientHeight
-	const camera: THREE.PerspectiveCamera = new THREE.PerspectiveCamera(75, width / height, 1, 2000)
+	const state = {
+		frame: true,
+		width,
+		height,
+		aspect: width / height,
+		halfX: width / 2,
+		halfY: height / 2,
+	}
+
+	const camera: THREE.PerspectiveCamera = new THREE.PerspectiveCamera(75, state.aspect, 1, 2000)
 	camera.position.z = 100
 	const scene = new THREE.Scene()
 	const textureLoader = new THREE.TextureLoader()
 	const map = textureLoader.load('//s3.bmp.ovh/imgs/2021/08/e4d9fa8c911362fa.png')
 	const material = new THREE.SpriteMaterial({ map })
 
-	const halfX = width / 2
-	const halfY = height / 2
 	let mouseX = 0
 	let mouseY = 0
 	const particles: THREE.Sprite[] = []
@@ -41,17 +48,35 @@ export function snow(container: HTMLDivElement, { amount = 360, fallSpeen = 2 })
 
 	const renderer = new THREE.WebGLRenderer({ alpha: true })
 	renderer.setPixelRatio(window.devicePixelRatio)
-	renderer.setSize(width, height)
+	renderer.setSize(state.width, state.height)
 	container.appendChild(renderer.domElement)
 
+	const resizeObserver = new ResizeObserver((entries) => {
+		const entry = entries[0]
+		const width = entry.contentRect.width
+		const height = entry.contentRect.height
+		Object.assign(state, {
+			frame: true,
+			width,
+			height,
+			aspect: width / height,
+			halfX: width / 2,
+			halfY: height / 2,
+		})
+		camera.aspect = state.aspect
+		camera.updateProjectionMatrix()
+		renderer.setSize(state.width, state.height)
+	})
+	resizeObserver.observe(container)
+
 	const mouseHandler = (e: MouseEvent) => {
-		mouseX = e.clientX - halfX
-		mouseY = e.clientY - halfY
+		mouseX = e.clientX - state.halfX
+		mouseY = e.clientY - state.halfY
 	}
 	const touchHandler = (e: TouchEvent) => {
 		e.preventDefault()
-		mouseX = e.touches[0].pageX - halfX
-		mouseY = e.touches[0].pageY - halfY
+		mouseX = e.touches[0].pageX - state.halfX
+		mouseY = e.touches[0].pageY - state.halfY
 	}
 
 	document.addEventListener('mousemove', mouseHandler, false)
@@ -82,10 +107,6 @@ export function snow(container: HTMLDivElement, { amount = 360, fallSpeen = 2 })
 		camera.lookAt(scene.position)
 
 		renderer.render(scene, camera)
-	}
-
-	const state = {
-		frame: true,
 	}
 
 	const animate = () => {
