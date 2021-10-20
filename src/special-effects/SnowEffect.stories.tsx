@@ -5,7 +5,7 @@ import SnowEffect from './SnowEffect'
 import '../stylesheets/stories.css'
 
 export default {
-	title: 'WebGL/SpecialEffect',
+	title: 'WebGL/SpecialEffect/SnowEffect',
 	component: SnowEffect,
 } as ComponentMeta<typeof SnowEffect>
 
@@ -23,8 +23,10 @@ const Template: ComponentStory<typeof SnowEffect> = (args) => (
 	</div>
 )
 
-export const Snow = Template.bind({})
-Snow.args = {
+export const snowTpl = Template.bind({})
+snowTpl.args = {
 	amount: 180,
 	fallSpeen: 2,
 }
+
+snowTpl.storyName = 'SnowEffect'
