@@ -2,11 +2,27 @@ import * as React from 'react'
 import * as THREE from 'three'
 import { THREEContainer, useThreeRender, useThreeScene } from '../../components/THREEContainer'
 
+function SpotLight() {
+	const scene = useThreeScene()
+
+	React.useEffect(() => {
+		const spotLight = new THREE.SpotLight(0xffffff)
+		spotLight.position.set(-40, 60, -10)
+		scene.add(spotLight)
+
+		return () => {
+			scene.remove(spotLight)
+		}
+	}, [scene])
+
+	return <></>
+}
+
 function Sphere() {
 	const scene = useThreeScene()
 	React.useEffect(() => {
 		const sphereGeometry = new THREE.SphereGeometry(4, 20, 20)
-		const sphereMaterial = new THREE.MeshBasicMaterial({
+		const sphereMaterial = new THREE.MeshLambertMaterial({
 			wireframe: true,
 			color: 0x7777ff,
 		})
@@ -26,7 +42,7 @@ function Box() {
 
 	React.useEffect(() => {
 		const boxGeometry = new THREE.BoxGeometry(4, 4, 4)
-		const boxMaterial = new THREE.MeshBasicMaterial({ color: 0x8d0c0c })
+		const boxMaterial = new THREE.MeshLambertMaterial({ color: 0x8d0c0c })
 
 		const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial)
 		boxMesh.position.x = -4
@@ -72,6 +88,7 @@ export function Scene3D() {
 			<>
 				<Box />
 				<Sphere />
+				<SpotLight />
 			</>
 		</THREEContainer>
 	)
