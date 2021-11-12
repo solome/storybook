@@ -15,7 +15,7 @@ export default create({
   appBorderRadius: 4,
 
   // Typography
-  fontBase: `"Nunito Sans",-apple-system,".SFNSText-Regular","San Francisco",BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif`,
+  fontBase: `'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif`,
   fontCode: 'monospace',
 
   // Text colors

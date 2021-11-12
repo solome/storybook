@@ -31,6 +31,8 @@ const defaultHeight = 540
  * // 渲染
  * renderer.render(css3DScene, camera)
  * ```
+ *
+ * **CSS3 `transform()` 强大到可爱**。
  */
 export function CSS3DRendererView() {
 	const ref = React.useRef<HTMLDivElement>(null)
