@@ -23,25 +23,25 @@ Object.assign(window, { $threeScene: glThreeScene })
 
 export const THREEContext = React.createContext<THREEContextScene>(glThreeScene)
 
-export function useThreeScene() {
+export function useTHREEScene() {
 	const { scene } = React.useContext(THREEContext)
 
 	return scene
 }
 
-export function useThreeRenderer() {
+export function useTHREERenderer() {
 	const { renderer } = React.useContext(THREEContext)
 
 	return renderer
 }
 
-export function useThreeCamera() {
+export function useTHREECamera() {
 	const { camera } = React.useContext(THREEContext)
 
 	return camera
 }
 
-export function useThreeRender() {
+export function useTHREERenderCallback() {
 	const { scene, camera, renderer } = React.useContext(THREEContext)
 
 	const render = React.useCallback(() => renderer.render(scene, camera), [camera, renderer, scene])
@@ -78,9 +78,9 @@ export function THREEContainer({ children }: { children?: string | JSX.Element }
 		if (parentElement) resizeObserverRef.current.observe(parentElement)
 	}, [])
 
-	const scene = useThreeScene()
-	const camera = useThreeCamera()
-	const renderer = useThreeRenderer()
+	const scene = useTHREEScene()
+	const camera = useTHREECamera()
+	const renderer = useTHREERenderer()
 
 	// 宽高自适应
 	React.useEffect(() => {
