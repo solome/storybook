@@ -1,6 +1,6 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import SnowEffect from "./SnowEffect";
+import React from "react"
+import { Meta, StoryObj } from "@storybook/react"
+import SnowEffect from "./SnowEffect"
 
 import "../stylesheets/stories.css";
 
@@ -20,7 +20,6 @@ export const Primary: Story = {
   },
 
   render: (args) => {
-    console.log('args', args)
     return (
       <div className="storybook-SnowEffect" style={style}>
         <SnowEffect {...args} />
