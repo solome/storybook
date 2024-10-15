@@ -1,0 +1,8 @@
+@import url(//solome.js.org/static/fonts/style.css);
+
+html,
+body,
+#storybook-root {
+	width: 100%;
+	height: 100%;
+}
