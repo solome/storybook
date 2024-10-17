@@ -1,0 +1,200 @@
+.CalendarHeatmap {
+  
+  tr {
+    height: 16px;
+  }
+  thead td {
+    text-align: center;
+    font-size: 12px;
+  }
+  tbody td {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    background-color: #ebedf0;
+    border-spacing: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  input,
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    margin-right: 3px;
+  }
+
+  .td-item {
+    position: relative;
+  }
+
+  .td-item-l1 {
+    background-color: #9be9a8;
+  }
+
+  .td-item-l2 {
+    background-color: #40c463;
+  }
+  .td-item-l3 {
+    background-color: #30a14e;
+  }
+  .td-item-l4 {
+    background-color: #216e39;
+  }
+
+  .tbody__suggest .td-item-l1 {
+    background-color: #bdd9fd;
+  }
+
+  .tbody__suggest .td-item-l2 {
+    background-color: #6daefb;
+  }
+  .tbody__suggest .td-item-l3 {
+    background-color: #3792f9;
+  }
+  .tbody__suggest .td-item-l4 {
+    background-color: #0275f8;
+  }
+
+  .tbody__bug .td-item-l1 {
+    background-color: #f9e681;
+  }
+
+  .tbody__bug .td-item-l2 {
+    background-color: #facd56;
+  }
+  .tbody__bug .td-item-l3 {
+    background-color: #fbb42b;
+  }
+  .tbody__bug .td-item-l4 {
+    background-color: #fba816;
+  }
+
+  .tbody__perf .td-item-l1 {
+    background-color: #f8c3cd;
+  }
+
+  .tbody__perf .td-item-l2 {
+    background-color: #e57b93;
+  }
+  .tbody__perf .td-item-l3 {
+    background-color: #d13358;
+  }
+  .tbody__perf .td-item-l4 {
+    background-color: #cb1b45;
+  }
+
+  .td-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    z-index: 99;
+    opacity: 0;
+    transition: ease-in-out 0.25s;
+    background-color: rgb(242, 239, 229);
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    text-align: left;
+    padding: 4px 8px;
+
+    ul {
+      padding: 0;
+    }
+  }
+
+  .td-wrapper li {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 2px 0;
+  }
+
+  .td-wrapper a {
+    color: #4b8bd3;
+    text-decoration: none;
+  }
+
+  .td-wrapper a:hover {
+    text-decoration: underline;
+  }
+
+  .td-item__right .td-wrapper {
+    left: -182px;
+  }
+  .td-item:hover .td-wrapper {
+    opacity: 1;
+  }
+
+  .weekStr {
+    width: 24px;
+    font-size: 10px;
+    background-color: white;
+    cursor: none;
+  }
+
+
+  .label {
+    border-radius: 4px;
+    padding: 1px 2px;
+  }
+
+  .label__perf {
+    border: 2px solid #e57b93;
+  }
+
+  .label__perf:hover {
+    background-color: #e57b93;
+  }
+
+  .label__suggest {
+    border: 2px solid #3792f9;
+  }
+
+  .label__suggest:hover {
+    background-color: #3792f9;
+  }
+
+  .label__bug {
+    border: 2px solid #fbb42b;
+  }
+
+  .label__bug:hover {
+    background-color: #fbb42b;
+  }
+
+  .label__praise {
+    border: 2px solid #40c463;
+  }
+
+  .label__praise:hover {
+    background-color: #40c463;
+  }
+}
+
+.tags {
+  font-size: 13px;
+  display: flex;
+  margin: 12px 0 6px 0;
+}
+
+.tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 4px;
+  cursor: pointer;
+
+  .label, input {
+    cursor: pointer;
+  }
+  input {
+    margin: 0 2px;
+  }
+}
