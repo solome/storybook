@@ -27,7 +27,7 @@ export function snow(container: HTMLDivElement, { amount = 360, fallSpeed = 2 })
 	const scene = new THREE.Scene()
 	const textureLoader = new THREE.TextureLoader()
 	// const map = textureLoader.load('//s3.bmp.ovh/imgs/2021/08/e4d9fa8c911362fa.png')
-  	const map = textureLoader.load('/stories/assets/snow.png')
+  	const map = textureLoader.load('../stories/assets/snow.png')
 
 	const material = new THREE.SpriteMaterial({ map })
 

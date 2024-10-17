@@ -1,0 +1,72 @@
+.FileTree-summary {
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  padding-left: 10px;
+
+  &:hover {
+    color: hsl(234, 90%, 60%);
+    fill: hsl(234, 90%, 60%);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: transform .35s;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-top: 4px dashed transparent;
+    border-bottom: 4px dashed transparent;
+    border-left: 6px solid black;
+    border-right: 0px solid transparent;
+    display: block;
+  }
+}
+
+details[open] >
+  .FileTree-summary {
+    &::before {
+      transform: translate(0, -50%) rotate(90deg);
+    }
+  }
+
+.FileTree {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: rgb(23, 24, 28);
+}
+
+details > .FileTree {
+  margin-inline-start: 1.5rem;
+  padding-inline-start: 1.5rem;
+  border-inline-start: 1px solid hsl(0deg 0% 50% / 35%);
+}
+
+.FileTree-directory,
+.FileTree-file {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.FileTree-icon, .FileTree-filename {
+  display: inline-flex;
+  justify-self: center;
+  align-items: center;
+  padding: 0 4px;
+
+}
+
+.FileTree-filename--highlight {
+  background-color: hsl(234, 90%, 60%);
+  color: whitesmoke;
+  fill: whitesmoke;
+  border-radius: 4px;
+}
