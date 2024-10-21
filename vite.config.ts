@@ -9,16 +9,17 @@ export default defineConfig({
   base: './',
   plugins: [react(), viteSingleFile()],
   build: {
+    emptyOutDir: false,
     rollupOptions: {
       input: {
-        // main: resolve(__dirname, 'elefanto-memory-trends.html'),
-        // realsee: resolve(__dirname, 'index.html'),
-        // prosemirror: resolve(__dirname, 'prose-mirror.html'),
         // 'calendar-heatmap': resolve(__dirname, 'calendar-heatmap.html'),
-        main: resolve(__dirname, 'calendar-heatmap.html'),
-
-      }
-    }
+        'file-tree': resolve(__dirname, 'file-tree.html'),
+      },
+      output: {
+        dir: 'demo',
+        // inlineDynamicImports: false,
+      },
+    },
   },
   resolve: {
     alias: {

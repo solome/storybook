@@ -1,6 +1,8 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import { FileTree } from '.';
+import React from 'react'
+import { Meta, StoryObj } from '@storybook/react'
+
+import { FileTree } from '.'
+
 
 const meta: Meta<typeof FileTree> = {
   title: 'Components/FileTree',
@@ -90,6 +92,56 @@ export const Demo2: Story = {
           },
           {
             fileName: 'pages/'
+          }
+        ]
+      }
+    ]
+  }
+}
+
+export const Demo3: Story = {
+  args: {
+    data: [
+      {
+        fileName: 'Cargo.lock',
+      },
+      {
+        fileName: 'Cargo.toml',
+      },
+      {
+        fileName: 'README.md',
+      },
+      {
+        fileName: 'src',
+        children: [
+          {
+            fileName: 'cyclomatic_complexity',
+            children: [
+              {
+                fileName: 'debug.rs',
+              },
+              {
+                fileName: 'filter_primes_from_mixed_array.rs',
+              },
+              {
+                fileName: 'mod.rs',
+              },
+              {
+                fileName: 'number_to_month.rs',
+              },
+              {
+                fileName: 'validate_login.rs',
+              },
+            ]
+          },
+          {
+            fileName: 'main.rs'
+          },
+          {
+            fileName: 'sysinfo',
+            children: [{
+              fileName: ' explore.rs'
+            }]
           }
         ]
       }

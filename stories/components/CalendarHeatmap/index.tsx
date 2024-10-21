@@ -128,7 +128,6 @@ export function CalendarHeatmap(props: CalendarHeatmapProps) {
       return res !== -1;
     });
 
-    console.log("data", data);
     setData(data);
   }, [tagEnum]);
 

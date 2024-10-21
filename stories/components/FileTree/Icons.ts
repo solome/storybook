@@ -1,4 +1,7 @@
-import { FileIcons } from './file-tree-icons.js'
+import { FileIcons } from './file-tree-icons'
+
+// const goalObject = Object.assign({}, window) as any
+// const FileIcons = goalObject['file-tree-icons'] 
 
 export const BuiltInIcons = {
 	'up-caret':

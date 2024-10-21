@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { CalendarHeatmap, CalendarHeatmapProps } from '.'
+import { FileTree, FileTreeProps } from '.'
 
 function main() {
   const obj: any = Object.assign({}, window)
-  const props = obj.$__data__ as CalendarHeatmapProps
+  const props = obj.$__data__ as FileTreeProps
   ReactDOM.createRoot(document.getElementById('root')!).render(
-    <CalendarHeatmap {...props} />
+    <FileTree {...props} />
   )
 }
 

@@ -10,7 +10,6 @@ const randomRange = (min: number, max: number) => Math.random() * (max - min) + 
  * @returns 销毁函数：@todo 内存销毁尚不干净
  */
 export function snow(container: HTMLDivElement, { amount = 360, fallSpeed = 2 }) {
-  console.log('snow', container, {amount, fallSpeed})
 	const width = container.clientWidth
 	const height = container.clientHeight
 	const state = {
@@ -145,7 +144,6 @@ export default function SnowEffect(props: SnowEffectProps) {
 	React.useEffect(() => {
 		ref.current && snow(ref.current, { amount: props.amount || 360, fallSpeed: props.fallSpeed || 2 })
 	})
-  console.log('SnowEffect@props', props)
 	return (
 		<div
 			ref={ref}
