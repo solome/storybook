@@ -13,7 +13,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // 'calendar-heatmap': resolve(__dirname, 'calendar-heatmap.html'),
-        'file-tree': resolve(__dirname, 'file-tree.html'),
+        // 'file-tree': resolve(__dirname, 'file-tree.html'),
+        'mermaid-wrapper': resolve(__dirname, 'mermaid-wrapper.html'),
       },
       output: {
         dir: 'demo',

@@ -35,5 +35,8 @@
     "vite": "^5.4.9",
     "vite-plugin-singlefile": "^2.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dompurify": "^3.2.1",
+    "mermaid": "^11.4.0"
+  }
 }

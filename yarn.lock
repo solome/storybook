@@ -15,6 +15,19 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+"@antfu/install-pkg@^0.4.0":
+  version "0.4.1"
+  resolved "http://r.npm.sankuai.com/@antfu/install-pkg/download/@antfu/install-pkg-0.4.1.tgz#d1d7f3be96ecdb41581629cafe8626d1748c0cf1"
+  integrity sha1-0dfzvpbs20FYFinK/oYm0XSMDPE=
+  dependencies:
+    package-manager-detector "^0.2.0"
+    tinyexec "^0.3.0"
+
+"@antfu/utils@^0.7.10":
+  version "0.7.10"
+  resolved "http://r.npm.sankuai.com/@antfu/utils/download/@antfu/utils-0.7.10.tgz#ae829f170158e297a9b6a28f161a8e487d00814d"
+  integrity sha1-roKfFwFY4peptqKPFhqOSH0AgU0=
+
 "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.25.7":
   version "7.25.7"
   resolved "http://r.npm.sankuai.com/@babel/code-frame/download/@babel/code-frame-7.25.7.tgz#438f2c524071531d643c6f0188e1e28f130cebc7"
@@ -198,10 +211,47 @@
   resolved "http://r.npm.sankuai.com/@base2/pretty-print-object/download/@base2/pretty-print-object-1.0.1.tgz#371ba8be66d556812dc7fb169ebc3c08378f69d4"
   integrity sha1-NxuovmbVVoEtx/sWnrw8CDePadQ=
 
+"@braintree/sanitize-url@^7.0.1":
+  version "7.1.0"
+  resolved "http://r.npm.sankuai.com/@braintree/sanitize-url/download/@braintree/sanitize-url-7.1.0.tgz#048e48aab4f1460e3121e22aa62459d16653dc85"
+  integrity sha1-BI5IqrTxRg4xIeIqpiRZ0WZT3IU=
+
 "@bufbuild/protobuf@^2.0.0":
   version "2.2.0"
   resolved "http://r.npm.sankuai.com/@bufbuild/protobuf/download/@bufbuild/protobuf-2.2.0.tgz#3c63dcbb6ef4f6a9f587e3d412c08f9a8f5bcd00"
   integrity sha1-PGPcu2709qn1h+PUEsCPmo9bzQA=
+
+"@chevrotain/cst-dts-gen@11.0.3":
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/@chevrotain/cst-dts-gen/download/@chevrotain/cst-dts-gen-11.0.3.tgz#5e0863cc57dc45e204ccfee6303225d15d9d4783"
+  integrity sha1-XghjzFfcReIEzP7mMDIl0V2dR4M=
+  dependencies:
+    "@chevrotain/gast" "11.0.3"
+    "@chevrotain/types" "11.0.3"
+    lodash-es "4.17.21"
+
+"@chevrotain/gast@11.0.3":
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/@chevrotain/gast/download/@chevrotain/gast-11.0.3.tgz#e84d8880323fe8cbe792ef69ce3ffd43a936e818"
+  integrity sha1-6E2IgDI/6Mvnku9pzj/9Q6k26Bg=
+  dependencies:
+    "@chevrotain/types" "11.0.3"
+    lodash-es "4.17.21"
+
+"@chevrotain/regexp-to-ast@11.0.3":
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/@chevrotain/regexp-to-ast/download/@chevrotain/regexp-to-ast-11.0.3.tgz#11429a81c74a8e6a829271ce02fc66166d56dcdb"
+  integrity sha1-EUKagcdKjmqCknHOAvxmFm1W3Ns=
+
+"@chevrotain/types@11.0.3":
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/@chevrotain/types/download/@chevrotain/types-11.0.3.tgz#f8a03914f7b937f594f56eb89312b3b8f1c91848"
+  integrity sha1-+KA5FPe5N/WU9W64kxKzuPHJGEg=
+
+"@chevrotain/utils@11.0.3":
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/@chevrotain/utils/download/@chevrotain/utils-11.0.3.tgz#e39999307b102cff3645ec4f5b3665f5297a2224"
+  integrity sha1-45mZMHsQLP82RexPWzZl9Sl6IiQ=
 
 "@emotion/use-insertion-effect-with-fallbacks@^1.0.0":
   version "1.1.0"
@@ -443,6 +493,24 @@
   resolved "http://r.npm.sankuai.com/@esbuild/win32-x64/download/@esbuild/win32-x64-0.23.1.tgz#81fd50d11e2c32b2d6241470e3185b70c7b30699"
   integrity sha1-gf1Q0R4sMrLWJBRw4xhbcMezBpk=
 
+"@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "http://r.npm.sankuai.com/@iconify/types/download/@iconify/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha1-qw6epoHWyKEhTzDNdB/jogzFf1c=
+
+"@iconify/utils@^2.1.32":
+  version "2.1.33"
+  resolved "http://r.npm.sankuai.com/@iconify/utils/download/@iconify/utils-2.1.33.tgz#cbf7242a52fd0ec58c42d37d28e4406b5327e8c0"
+  integrity sha1-y/ckKlL9DsWMQtN9KORAa1Mn6MA=
+  dependencies:
+    "@antfu/install-pkg" "^0.4.0"
+    "@antfu/utils" "^0.7.10"
+    "@iconify/types" "^2.0.0"
+    debug "^4.3.6"
+    kolorist "^1.8.0"
+    local-pkg "^0.5.0"
+    mlly "^1.7.1"
+
 "@joshwooding/vite-plugin-react-docgen-typescript@0.3.0":
   version "0.3.0"
   resolved "http://r.npm.sankuai.com/@joshwooding/vite-plugin-react-docgen-typescript/download/@joshwooding/vite-plugin-react-docgen-typescript-0.3.0.tgz#67599fca260c2eafdaf234a944f9d471e6d53b08"
@@ -491,6 +559,13 @@
   integrity sha1-mXoZs6W3g9k2x1rnxHz+Yvln90Y=
   dependencies:
     "@types/mdx" "^2.0.0"
+
+"@mermaid-js/parser@^0.3.0":
+  version "0.3.0"
+  resolved "http://r.npm.sankuai.com/@mermaid-js/parser/download/@mermaid-js/parser-0.3.0.tgz#7a28714599f692f93df130b299fa1aadc9f9c8ab"
+  integrity sha1-eihxRZn2kvk98TCymfoarcn5yKs=
+  dependencies:
+    langium "3.0.0"
 
 "@rollup/pluginutils@^5.0.2":
   version "5.1.2"
@@ -1069,10 +1144,227 @@
   dependencies:
     "@types/node" "*"
 
+"@types/d3-array@*":
+  version "3.2.1"
+  resolved "http://r.npm.sankuai.com/@types/d3-array/download/@types/d3-array-3.2.1.tgz#1f6658e3d2006c4fceac53fde464166859f8b8c5"
+  integrity sha1-H2ZY49IAbE/OrFP95GQWaFn4uMU=
+
+"@types/d3-axis@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-axis/download/@types/d3-axis-3.0.6.tgz#e760e5765b8188b1defa32bc8bb6062f81e4c795"
+  integrity sha1-52DldluBiLHe+jK8i7YGL4Hkx5U=
+  dependencies:
+    "@types/d3-selection" "*"
+
+"@types/d3-brush@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-brush/download/@types/d3-brush-3.0.6.tgz#c2f4362b045d472e1b186cdbec329ba52bdaee6c"
+  integrity sha1-wvQ2KwRdRy4bGGzb7DKbpSva7mw=
+  dependencies:
+    "@types/d3-selection" "*"
+
+"@types/d3-chord@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-chord/download/@types/d3-chord-3.0.6.tgz#1706ca40cf7ea59a0add8f4456efff8f8775793d"
+  integrity sha1-FwbKQM9+pZoK3Y9EVu//j4d1eT0=
+
+"@types/d3-color@*":
+  version "3.1.3"
+  resolved "http://r.npm.sankuai.com/@types/d3-color/download/@types/d3-color-3.1.3.tgz#368c961a18de721da8200e80bf3943fb53136af2"
+  integrity sha1-NoyWGhjech2oIA6AvzlD+1MTavI=
+
+"@types/d3-contour@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-contour/download/@types/d3-contour-3.0.6.tgz#9ada3fa9c4d00e3a5093fed0356c7ab929604231"
+  integrity sha1-mto/qcTQDjpQk/7QNWx6uSlgQjE=
+  dependencies:
+    "@types/d3-array" "*"
+    "@types/geojson" "*"
+
+"@types/d3-delaunay@*":
+  version "6.0.4"
+  resolved "http://r.npm.sankuai.com/@types/d3-delaunay/download/@types/d3-delaunay-6.0.4.tgz#185c1a80cc807fdda2a3fe960f7c11c4a27952e1"
+  integrity sha1-GFwagMyAf92io/6WD3wRxKJ5UuE=
+
+"@types/d3-dispatch@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-dispatch/download/@types/d3-dispatch-3.0.6.tgz#096efdf55eb97480e3f5621ff9a8da552f0961e7"
+  integrity sha1-CW799V65dIDj9WIf+ajaVS8JYec=
+
+"@types/d3-drag@*":
+  version "3.0.7"
+  resolved "http://r.npm.sankuai.com/@types/d3-drag/download/@types/d3-drag-3.0.7.tgz#b13aba8b2442b4068c9a9e6d1d82f8bcea77fc02"
+  integrity sha1-sTq6iyRCtAaMmp5tHYL4vOp3/AI=
+  dependencies:
+    "@types/d3-selection" "*"
+
+"@types/d3-dsv@*":
+  version "3.0.7"
+  resolved "http://r.npm.sankuai.com/@types/d3-dsv/download/@types/d3-dsv-3.0.7.tgz#0a351f996dc99b37f4fa58b492c2d1c04e3dac17"
+  integrity sha1-CjUfmW3Jmzf0+li0ksLRwE49rBc=
+
+"@types/d3-ease@*":
+  version "3.0.2"
+  resolved "http://r.npm.sankuai.com/@types/d3-ease/download/@types/d3-ease-3.0.2.tgz#e28db1bfbfa617076f7770dd1d9a48eaa3b6c51b"
+  integrity sha1-4o2xv7+mFwdvd3DdHZpI6qO2xRs=
+
+"@types/d3-fetch@*":
+  version "3.0.7"
+  resolved "http://r.npm.sankuai.com/@types/d3-fetch/download/@types/d3-fetch-3.0.7.tgz#c04a2b4f23181aa376f30af0283dbc7b3b569980"
+  integrity sha1-wEorTyMYGqN28wrwKD28eztWmYA=
+  dependencies:
+    "@types/d3-dsv" "*"
+
+"@types/d3-force@*":
+  version "3.0.10"
+  resolved "http://r.npm.sankuai.com/@types/d3-force/download/@types/d3-force-3.0.10.tgz#6dc8fc6e1f35704f3b057090beeeb7ac674bff1a"
+  integrity sha1-bcj8bh81cE87BXCQvu63rGdL/xo=
+
+"@types/d3-format@*":
+  version "3.0.4"
+  resolved "http://r.npm.sankuai.com/@types/d3-format/download/@types/d3-format-3.0.4.tgz#b1e4465644ddb3fdf3a263febb240a6cd616de90"
+  integrity sha1-seRGVkTds/3zomP+uyQKbNYW3pA=
+
+"@types/d3-geo@*":
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/@types/d3-geo/download/@types/d3-geo-3.1.0.tgz#b9e56a079449174f0a2c8684a9a4df3f60522440"
+  integrity sha1-ueVqB5RJF08KLIaEqaTfP2BSJEA=
+  dependencies:
+    "@types/geojson" "*"
+
+"@types/d3-hierarchy@*":
+  version "3.1.7"
+  resolved "http://r.npm.sankuai.com/@types/d3-hierarchy/download/@types/d3-hierarchy-3.1.7.tgz#6023fb3b2d463229f2d680f9ac4b47466f71f17b"
+  integrity sha1-YCP7Oy1GMiny1oD5rEtHRm9x8Xs=
+
+"@types/d3-interpolate@*":
+  version "3.0.4"
+  resolved "http://r.npm.sankuai.com/@types/d3-interpolate/download/@types/d3-interpolate-3.0.4.tgz#412b90e84870285f2ff8a846c6eb60344f12a41c"
+  integrity sha1-QSuQ6EhwKF8v+KhGxutgNE8SpBw=
+  dependencies:
+    "@types/d3-color" "*"
+
+"@types/d3-path@*":
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/@types/d3-path/download/@types/d3-path-3.1.0.tgz#2b907adce762a78e98828f0b438eaca339ae410a"
+  integrity sha1-K5B63Odip46Ygo8LQ46sozmuQQo=
+
+"@types/d3-polygon@*":
+  version "3.0.2"
+  resolved "http://r.npm.sankuai.com/@types/d3-polygon/download/@types/d3-polygon-3.0.2.tgz#dfae54a6d35d19e76ac9565bcb32a8e54693189c"
+  integrity sha1-365UptNdGedqyVZbyzKo5UaTGJw=
+
+"@types/d3-quadtree@*":
+  version "3.0.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-quadtree/download/@types/d3-quadtree-3.0.6.tgz#d4740b0fe35b1c58b66e1488f4e7ed02952f570f"
+  integrity sha1-1HQLD+NbHFi2bhSI9OftApUvVw8=
+
+"@types/d3-random@*":
+  version "3.0.3"
+  resolved "http://r.npm.sankuai.com/@types/d3-random/download/@types/d3-random-3.0.3.tgz#ed995c71ecb15e0cd31e22d9d5d23942e3300cfb"
+  integrity sha1-7ZlcceyxXgzTHiLZ1dI5QuMwDPs=
+
+"@types/d3-scale-chromatic@*":
+  version "3.0.3"
+  resolved "http://r.npm.sankuai.com/@types/d3-scale-chromatic/download/@types/d3-scale-chromatic-3.0.3.tgz#fc0db9c10e789c351f4c42d96f31f2e4df8f5644"
+  integrity sha1-/A25wQ54nDUfTELZbzHy5N+PVkQ=
+
+"@types/d3-scale@*":
+  version "4.0.8"
+  resolved "http://r.npm.sankuai.com/@types/d3-scale/download/@types/d3-scale-4.0.8.tgz#d409b5f9dcf63074464bf8ddfb8ee5a1f95945bb"
+  integrity sha1-1Am1+dz2MHRGS/jd+47loflZRbs=
+  dependencies:
+    "@types/d3-time" "*"
+
+"@types/d3-selection@*":
+  version "3.0.11"
+  resolved "http://r.npm.sankuai.com/@types/d3-selection/download/@types/d3-selection-3.0.11.tgz#bd7a45fc0a8c3167a631675e61bc2ca2b058d4a3"
+  integrity sha1-vXpF/AqMMWemMWdeYbwsorBY1KM=
+
+"@types/d3-shape@*":
+  version "3.1.6"
+  resolved "http://r.npm.sankuai.com/@types/d3-shape/download/@types/d3-shape-3.1.6.tgz#65d40d5a548f0a023821773e39012805e6e31a72"
+  integrity sha1-ZdQNWlSPCgI4IXc+OQEoBebjGnI=
+  dependencies:
+    "@types/d3-path" "*"
+
+"@types/d3-time-format@*":
+  version "4.0.3"
+  resolved "http://r.npm.sankuai.com/@types/d3-time-format/download/@types/d3-time-format-4.0.3.tgz#d6bc1e6b6a7db69cccfbbdd4c34b70632d9e9db2"
+  integrity sha1-1rwea2p9tpzM+73Uw0twYy2enbI=
+
+"@types/d3-time@*":
+  version "3.0.4"
+  resolved "http://r.npm.sankuai.com/@types/d3-time/download/@types/d3-time-3.0.4.tgz#8472feecd639691450dd8000eb33edd444e1323f"
+  integrity sha1-hHL+7NY5aRRQ3YAA6zPt1EThMj8=
+
+"@types/d3-timer@*":
+  version "3.0.2"
+  resolved "http://r.npm.sankuai.com/@types/d3-timer/download/@types/d3-timer-3.0.2.tgz#70bbda77dc23aa727413e22e214afa3f0e852f70"
+  integrity sha1-cLvad9wjqnJ0E+IuIUr6Pw6FL3A=
+
+"@types/d3-transition@*":
+  version "3.0.9"
+  resolved "http://r.npm.sankuai.com/@types/d3-transition/download/@types/d3-transition-3.0.9.tgz#1136bc57e9ddb3c390dccc9b5ff3b7d2b8d94706"
+  integrity sha1-ETa8V+nds8OQ3MybX/O30rjZRwY=
+  dependencies:
+    "@types/d3-selection" "*"
+
+"@types/d3-zoom@*":
+  version "3.0.8"
+  resolved "http://r.npm.sankuai.com/@types/d3-zoom/download/@types/d3-zoom-3.0.8.tgz#dccb32d1c56b1e1c6e0f1180d994896f038bc40b"
+  integrity sha1-3Msy0cVrHhxuDxGA2ZSJbwOLxAs=
+  dependencies:
+    "@types/d3-interpolate" "*"
+    "@types/d3-selection" "*"
+
+"@types/d3@^7.4.3":
+  version "7.4.3"
+  resolved "http://r.npm.sankuai.com/@types/d3/download/@types/d3-7.4.3.tgz#d4550a85d08f4978faf0a4c36b848c61eaac07e2"
+  integrity sha1-1FUKhdCPSXj68KTDa4SMYeqsB+I=
+  dependencies:
+    "@types/d3-array" "*"
+    "@types/d3-axis" "*"
+    "@types/d3-brush" "*"
+    "@types/d3-chord" "*"
+    "@types/d3-color" "*"
+    "@types/d3-contour" "*"
+    "@types/d3-delaunay" "*"
+    "@types/d3-dispatch" "*"
+    "@types/d3-drag" "*"
+    "@types/d3-dsv" "*"
+    "@types/d3-ease" "*"
+    "@types/d3-fetch" "*"
+    "@types/d3-force" "*"
+    "@types/d3-format" "*"
+    "@types/d3-geo" "*"
+    "@types/d3-hierarchy" "*"
+    "@types/d3-interpolate" "*"
+    "@types/d3-path" "*"
+    "@types/d3-polygon" "*"
+    "@types/d3-quadtree" "*"
+    "@types/d3-random" "*"
+    "@types/d3-scale" "*"
+    "@types/d3-scale-chromatic" "*"
+    "@types/d3-selection" "*"
+    "@types/d3-shape" "*"
+    "@types/d3-time" "*"
+    "@types/d3-time-format" "*"
+    "@types/d3-timer" "*"
+    "@types/d3-transition" "*"
+    "@types/d3-zoom" "*"
+
 "@types/doctrine@^0.0.9":
   version "0.0.9"
   resolved "http://r.npm.sankuai.com/@types/doctrine/download/@types/doctrine-0.0.9.tgz#d86a5f452a15e3e3113b99e39616a9baa0f9863f"
   integrity sha1-2GpfRSoV4+MRO5njlhapuqD5hj8=
+
+"@types/dompurify@^3.0.5":
+  version "3.2.0"
+  resolved "http://r.npm.sankuai.com/@types/dompurify/download/@types/dompurify-3.2.0.tgz#56610bf3e4250df57744d61fbd95422e07dfb840"
+  integrity sha1-VmEL8+QlDfV3RNYfvZVCLgffuEA=
+  dependencies:
+    dompurify "*"
 
 "@types/escodegen@^0.0.6":
   version "0.0.6"
@@ -1113,6 +1405,11 @@
   version "3.2.1"
   resolved "http://r.npm.sankuai.com/@types/find-cache-dir/download/@types/find-cache-dir-3.2.1.tgz#7b959a4b9643a1e6a1a5fe49032693cc36773501"
   integrity sha1-e5WaS5ZDoeahpf5JAyaTzDZ3NQE=
+
+"@types/geojson@*":
+  version "7946.0.14"
+  resolved "http://r.npm.sankuai.com/@types/geojson/download/@types/geojson-7946.0.14.tgz#319b63ad6df705ee2a65a73ef042c8271e696613"
+  integrity sha1-MZtjrW33Be4qZac+8ELIJx5pZhM=
 
 "@types/glob@^7.1.3":
   version "7.2.0"
@@ -1230,6 +1527,11 @@
     fflate "~0.8.2"
     meshoptimizer "~0.18.1"
 
+"@types/trusted-types@^2.0.7":
+  version "2.0.7"
+  resolved "http://r.npm.sankuai.com/@types/trusted-types/download/@types/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha1-usywepcLkXB986PoumiWxX6tLRE=
+
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.3"
   resolved "http://r.npm.sankuai.com/@types/unist/download/@types/unist-3.0.3.tgz#acaab0f919ce69cce629c2d4ed2eb4adc1b6c20c"
@@ -1343,6 +1645,11 @@ acorn@^8.12.1:
   version "8.12.1"
   resolved "http://r.npm.sankuai.com/acorn/download/acorn-8.12.1.tgz#71616bdccbe25e27a54439e0046e89ca76df2248"
   integrity sha1-cWFr3MviXielRDngBG6JynbfIkg=
+
+acorn@^8.14.0:
+  version "8.14.0"
+  resolved "http://r.npm.sankuai.com/acorn/download/acorn-8.14.0.tgz#063e2c70cac5fb4f6467f0b11152e04c682795b0"
+  integrity sha1-Bj4scMrF+09kZ/CxEVLgTGgnlbA=
 
 ansi-regex@^5.0.1:
   version "5.0.1"
@@ -1531,6 +1838,25 @@ check-error@^2.1.1:
   resolved "http://r.npm.sankuai.com/check-error/download/check-error-2.1.1.tgz#87eb876ae71ee388fa0471fe423f494be1d96ccc"
   integrity sha1-h+uHauce44j6BHH+Qj9JS+HZbMw=
 
+chevrotain-allstar@~0.3.0:
+  version "0.3.1"
+  resolved "http://r.npm.sankuai.com/chevrotain-allstar/download/chevrotain-allstar-0.3.1.tgz#b7412755f5d83cc139ab65810cdb00d8db40e6ca"
+  integrity sha1-t0EnVfXYPME5q2WBDNsA2NtA5so=
+  dependencies:
+    lodash-es "^4.17.21"
+
+chevrotain@~11.0.3:
+  version "11.0.3"
+  resolved "http://r.npm.sankuai.com/chevrotain/download/chevrotain-11.0.3.tgz#88ffc1fb4b5739c715807eaeedbbf200e202fc1b"
+  integrity sha1-iP/B+0tXOccVgH6u7bvyAOIC/Bs=
+  dependencies:
+    "@chevrotain/cst-dts-gen" "11.0.3"
+    "@chevrotain/gast" "11.0.3"
+    "@chevrotain/regexp-to-ast" "11.0.3"
+    "@chevrotain/types" "11.0.3"
+    "@chevrotain/utils" "11.0.3"
+    lodash-es "4.17.21"
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "http://r.npm.sankuai.com/color-convert/download/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -1560,6 +1886,16 @@ colorjs.io@^0.5.0:
   resolved "http://r.npm.sankuai.com/colorjs.io/download/colorjs.io-0.5.2.tgz#63b20139b007591ebc3359932bef84628eb3fcef"
   integrity sha1-Y7IBObAHWR68M1mTK++EYo6z/O8=
 
+commander@7:
+  version "7.2.0"
+  resolved "http://r.npm.sankuai.com/commander/download/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
+
+commander@^8.3.0:
+  version "8.3.0"
+  resolved "http://r.npm.sankuai.com/commander/download/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
+  integrity sha1-SDfqGy2me5xhamevuw+v7lZ7ymY=
+
 commondir@^1.0.1:
   version "1.0.1"
   resolved "http://r.npm.sankuai.com/commondir/download/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
@@ -1569,6 +1905,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "http://r.npm.sankuai.com/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+
+confbox@^0.1.8:
+  version "0.1.8"
+  resolved "http://r.npm.sankuai.com/confbox/download/confbox-0.1.8.tgz#820d73d3b3c82d9bd910652c5d4d599ef8ff8b06"
+  integrity sha1-gg1z07PILZvZEGUsXU1Znvj/iwY=
 
 content-disposition@0.5.4:
   version "0.5.4"
@@ -1597,6 +1938,20 @@ cookie@0.7.1:
   resolved "http://r.npm.sankuai.com/cookie/download/cookie-0.7.1.tgz#2f73c42142d5d5cf71310a74fc4ae61670e5dbc9"
   integrity sha1-L3PEIULV1c9xMQp0/ErmFnDl28k=
 
+cose-base@^1.0.0:
+  version "1.0.3"
+  resolved "http://r.npm.sankuai.com/cose-base/download/cose-base-1.0.3.tgz#650334b41b869578a543358b80cda7e0abe0a60a"
+  integrity sha1-ZQM0tBuGlXilQzWLgM2n4Kvgpgo=
+  dependencies:
+    layout-base "^1.0.0"
+
+cose-base@^2.2.0:
+  version "2.2.0"
+  resolved "http://r.npm.sankuai.com/cose-base/download/cose-base-2.2.0.tgz#1c395c35b6e10bb83f9769ca8b817d614add5c01"
+  integrity sha1-HDlcNbbhC7g/l2nKi4F9YUrdXAE=
+  dependencies:
+    layout-base "^2.0.0"
+
 css.escape@^1.5.1:
   version "1.5.1"
   resolved "http://r.npm.sankuai.com/css.escape/download/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
@@ -1607,6 +1962,309 @@ csstype@^3.0.2:
   resolved "http://r.npm.sankuai.com/csstype/download/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha1-2A/ylNEU+w5qxQD7+FtgE31+/4E=
 
+cytoscape-cose-bilkent@^4.1.0:
+  version "4.1.0"
+  resolved "http://r.npm.sankuai.com/cytoscape-cose-bilkent/download/cytoscape-cose-bilkent-4.1.0.tgz#762fa121df9930ffeb51a495d87917c570ac209b"
+  integrity sha1-di+hId+ZMP/rUaSV2HkXxXCsIJs=
+  dependencies:
+    cose-base "^1.0.0"
+
+cytoscape-fcose@^2.2.0:
+  version "2.2.0"
+  resolved "http://r.npm.sankuai.com/cytoscape-fcose/download/cytoscape-fcose-2.2.0.tgz#e4d6f6490df4fab58ae9cea9e5c3ab8d7472f471"
+  integrity sha1-5Nb2SQ30+rWK6c6p5cOrjXRy9HE=
+  dependencies:
+    cose-base "^2.2.0"
+
+cytoscape@^3.29.2:
+  version "3.30.4"
+  resolved "http://r.npm.sankuai.com/cytoscape/download/cytoscape-3.30.4.tgz#3404da0a159c00a1a3df2c85b2b43fdc66a0e28e"
+  integrity sha1-NATaChWcAKGj3yyFsrQ/3Gag4o4=
+
+"d3-array@1 - 2":
+  version "2.12.1"
+  resolved "http://r.npm.sankuai.com/d3-array/download/d3-array-2.12.1.tgz#e20b41aafcdffdf5d50928004ececf815a465e81"
+  integrity sha1-4gtBqvzf/fXVCSgATs7PgVpGXoE=
+  dependencies:
+    internmap "^1.0.0"
+
+"d3-array@2 - 3", "d3-array@2.10.0 - 3", "d3-array@2.5.0 - 3", d3-array@3, d3-array@^3.2.0:
+  version "3.2.4"
+  resolved "http://r.npm.sankuai.com/d3-array/download/d3-array-3.2.4.tgz#15fec33b237f97ac5d7c986dc77da273a8ed0bb5"
+  integrity sha1-Ff7DOyN/l6xdfJhtx32ic6jtC7U=
+  dependencies:
+    internmap "1 - 2"
+
+d3-axis@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-axis/download/d3-axis-3.0.0.tgz#c42a4a13e8131d637b745fc2973824cfeaf93322"
+  integrity sha1-xCpKE+gTHWN7dF/Clzgkz+r5MyI=
+
+d3-brush@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-brush/download/d3-brush-3.0.0.tgz#6f767c4ed8dcb79de7ede3e1c0f89e63ef64d31c"
+  integrity sha1-b3Z8Ttjct53n7ePhwPieY+9k0xw=
+  dependencies:
+    d3-dispatch "1 - 3"
+    d3-drag "2 - 3"
+    d3-interpolate "1 - 3"
+    d3-selection "3"
+    d3-transition "3"
+
+d3-chord@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-chord/download/d3-chord-3.0.1.tgz#d156d61f485fce8327e6abf339cb41d8cbba6966"
+  integrity sha1-0VbWH0hfzoMn5qvzOctB2Mu6aWY=
+  dependencies:
+    d3-path "1 - 3"
+
+"d3-color@1 - 3", d3-color@3:
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/d3-color/download/d3-color-3.1.0.tgz#395b2833dfac71507f12ac2f7af23bf819de24e2"
+  integrity sha1-OVsoM9+scVB/EqwvevI7+BneJOI=
+
+d3-contour@4:
+  version "4.0.2"
+  resolved "http://r.npm.sankuai.com/d3-contour/download/d3-contour-4.0.2.tgz#bb92063bc8c5663acb2422f99c73cbb6c6ae3bcc"
+  integrity sha1-u5IGO8jFZjrLJCL5nHPLtsauO8w=
+  dependencies:
+    d3-array "^3.2.0"
+
+d3-delaunay@6:
+  version "6.0.4"
+  resolved "http://r.npm.sankuai.com/d3-delaunay/download/d3-delaunay-6.0.4.tgz#98169038733a0a5babbeda55054f795bb9e4a58b"
+  integrity sha1-mBaQOHM6ClurvtpVBU95W7nkpYs=
+  dependencies:
+    delaunator "5"
+
+"d3-dispatch@1 - 3", d3-dispatch@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-dispatch/download/d3-dispatch-3.0.1.tgz#5fc75284e9c2375c36c839411a0cf550cbfc4d5e"
+  integrity sha1-X8dShOnCN1w2yDlBGgz1UMv8TV4=
+
+"d3-drag@2 - 3", d3-drag@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-drag/download/d3-drag-3.0.0.tgz#994aae9cd23c719f53b5e10e3a0a6108c69607ba"
+  integrity sha1-mUqunNI8cZ9TteEOOgphCMaWB7o=
+  dependencies:
+    d3-dispatch "1 - 3"
+    d3-selection "3"
+
+"d3-dsv@1 - 3", d3-dsv@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-dsv/download/d3-dsv-3.0.1.tgz#c63af978f4d6a0d084a52a673922be2160789b73"
+  integrity sha1-xjr5ePTWoNCEpSpnOSK+IWB4m3M=
+  dependencies:
+    commander "7"
+    iconv-lite "0.6"
+    rw "1"
+
+"d3-ease@1 - 3", d3-ease@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-ease/download/d3-ease-3.0.1.tgz#9658ac38a2140d59d346160f1f6c30fda0bd12f4"
+  integrity sha1-llisOKIUDVnTRhYPH2ww/aC9EvQ=
+
+d3-fetch@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-fetch/download/d3-fetch-3.0.1.tgz#83141bff9856a0edb5e38de89cdcfe63d0a60a22"
+  integrity sha1-gxQb/5hWoO21443onNz+Y9CmCiI=
+  dependencies:
+    d3-dsv "1 - 3"
+
+d3-force@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-force/download/d3-force-3.0.0.tgz#3e2ba1a61e70888fe3d9194e30d6d14eece155c4"
+  integrity sha1-Piuhph5wiI/j2RlOMNbRTuzhVcQ=
+  dependencies:
+    d3-dispatch "1 - 3"
+    d3-quadtree "1 - 3"
+    d3-timer "1 - 3"
+
+"d3-format@1 - 3", d3-format@3:
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/d3-format/download/d3-format-3.1.0.tgz#9260e23a28ea5cb109e93b21a06e24e2ebd55641"
+  integrity sha1-kmDiOijqXLEJ6TshoG4k4uvVVkE=
+
+d3-geo@3:
+  version "3.1.1"
+  resolved "http://r.npm.sankuai.com/d3-geo/download/d3-geo-3.1.1.tgz#6027cf51246f9b2ebd64f99e01dc7c3364033a4d"
+  integrity sha1-YCfPUSRvmy69ZPmeAdx8M2QDOk0=
+  dependencies:
+    d3-array "2.5.0 - 3"
+
+d3-hierarchy@3:
+  version "3.1.2"
+  resolved "http://r.npm.sankuai.com/d3-hierarchy/download/d3-hierarchy-3.1.2.tgz#b01cd42c1eed3d46db77a5966cf726f8c09160c6"
+  integrity sha1-sBzULB7tPUbbd6WWbPcm+MCRYMY=
+
+"d3-interpolate@1 - 3", "d3-interpolate@1.2.0 - 3", d3-interpolate@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-interpolate/download/d3-interpolate-3.0.1.tgz#3c47aa5b32c5b3dfb56ef3fd4342078a632b400d"
+  integrity sha1-PEeqWzLFs9+1bvP9Q0IHimMrQA0=
+  dependencies:
+    d3-color "1 - 3"
+
+d3-path@1:
+  version "1.0.9"
+  resolved "http://r.npm.sankuai.com/d3-path/download/d3-path-1.0.9.tgz#48c050bb1fe8c262493a8caf5524e3e9591701cf"
+  integrity sha1-SMBQux/owmJJOoyvVSTj6VkXAc8=
+
+"d3-path@1 - 3", d3-path@3, d3-path@^3.1.0:
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/d3-path/download/d3-path-3.1.0.tgz#22df939032fb5a71ae8b1800d61ddb7851c42526"
+  integrity sha1-It+TkDL7WnGuixgA1h3beFHEJSY=
+
+d3-polygon@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-polygon/download/d3-polygon-3.0.1.tgz#0b45d3dd1c48a29c8e057e6135693ec80bf16398"
+  integrity sha1-C0XT3RxIopyOBX5hNWk+yAvxY5g=
+
+"d3-quadtree@1 - 3", d3-quadtree@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-quadtree/download/d3-quadtree-3.0.1.tgz#6dca3e8be2b393c9a9d514dabbd80a92deef1a4f"
+  integrity sha1-bco+i+Kzk8mp1RTau9gKkt7vGk8=
+
+d3-random@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-random/download/d3-random-3.0.1.tgz#d4926378d333d9c0bfd1e6fa0194d30aebaa20f4"
+  integrity sha1-1JJjeNMz2cC/0eb6AZTTCuuqIPQ=
+
+d3-sankey@^0.12.3:
+  version "0.12.3"
+  resolved "http://r.npm.sankuai.com/d3-sankey/download/d3-sankey-0.12.3.tgz#b3c268627bd72e5d80336e8de6acbfec9d15d01d"
+  integrity sha1-s8JoYnvXLl2AM26N5qy/7J0V0B0=
+  dependencies:
+    d3-array "1 - 2"
+    d3-shape "^1.2.0"
+
+d3-scale-chromatic@3:
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/d3-scale-chromatic/download/d3-scale-chromatic-3.1.0.tgz#34c39da298b23c20e02f1a4b239bd0f22e7f1314"
+  integrity sha1-NMOdopiyPCDgLxpLI5vQ8i5/ExQ=
+  dependencies:
+    d3-color "1 - 3"
+    d3-interpolate "1 - 3"
+
+d3-scale@4:
+  version "4.0.2"
+  resolved "http://r.npm.sankuai.com/d3-scale/download/d3-scale-4.0.2.tgz#82b38e8e8ff7080764f8dcec77bd4be393689396"
+  integrity sha1-grOOjo/3CAdk+Nzsd71L45Nok5Y=
+  dependencies:
+    d3-array "2.10.0 - 3"
+    d3-format "1 - 3"
+    d3-interpolate "1.2.0 - 3"
+    d3-time "2.1.1 - 3"
+    d3-time-format "2 - 4"
+
+"d3-selection@2 - 3", d3-selection@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-selection/download/d3-selection-3.0.0.tgz#c25338207efa72cc5b9bd1458a1a41901f1e1b31"
+  integrity sha1-wlM4IH76csxbm9FFihpBkB8eGzE=
+
+d3-shape@3:
+  version "3.2.0"
+  resolved "http://r.npm.sankuai.com/d3-shape/download/d3-shape-3.2.0.tgz#a1a839cbd9ba45f28674c69d7f855bcf91dfc6a5"
+  integrity sha1-oag5y9m6RfKGdMadf4Vbz5HfxqU=
+  dependencies:
+    d3-path "^3.1.0"
+
+d3-shape@^1.2.0:
+  version "1.3.7"
+  resolved "http://r.npm.sankuai.com/d3-shape/download/d3-shape-1.3.7.tgz#df63801be07bc986bc54f63789b4fe502992b5d7"
+  integrity sha1-32OAG+B7yYa8VPY3ibT+UCmStdc=
+  dependencies:
+    d3-path "1"
+
+"d3-time-format@2 - 4", d3-time-format@4:
+  version "4.1.0"
+  resolved "http://r.npm.sankuai.com/d3-time-format/download/d3-time-format-4.1.0.tgz#7ab5257a5041d11ecb4fe70a5c7d16a195bb408a"
+  integrity sha1-erUlelBB0R7LT+cKXH0WoZW7QIo=
+  dependencies:
+    d3-time "1 - 3"
+
+"d3-time@1 - 3", "d3-time@2.1.1 - 3", d3-time@3:
+  version "3.1.0"
+  resolved "http://r.npm.sankuai.com/d3-time/download/d3-time-3.1.0.tgz#9310db56e992e3c0175e1ef385e545e48a9bb5c7"
+  integrity sha1-kxDbVumS48AXXh7zheVF5Iqbtcc=
+  dependencies:
+    d3-array "2 - 3"
+
+"d3-timer@1 - 3", d3-timer@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-timer/download/d3-timer-3.0.1.tgz#6284d2a2708285b1abb7e201eda4380af35e63b0"
+  integrity sha1-YoTSonCChbGrt+IB7aQ4CvNeY7A=
+
+"d3-transition@2 - 3", d3-transition@3:
+  version "3.0.1"
+  resolved "http://r.npm.sankuai.com/d3-transition/download/d3-transition-3.0.1.tgz#6869fdde1448868077fdd5989200cb61b2a1645f"
+  integrity sha1-aGn93hRIhoB3/dWYkgDLYbKhZF8=
+  dependencies:
+    d3-color "1 - 3"
+    d3-dispatch "1 - 3"
+    d3-ease "1 - 3"
+    d3-interpolate "1 - 3"
+    d3-timer "1 - 3"
+
+d3-zoom@3:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/d3-zoom/download/d3-zoom-3.0.0.tgz#d13f4165c73217ffeaa54295cd6969b3e7aee8f3"
+  integrity sha1-0T9BZccyF//qpUKVzWlps+eu6PM=
+  dependencies:
+    d3-dispatch "1 - 3"
+    d3-drag "2 - 3"
+    d3-interpolate "1 - 3"
+    d3-selection "2 - 3"
+    d3-transition "2 - 3"
+
+d3@^7.9.0:
+  version "7.9.0"
+  resolved "http://r.npm.sankuai.com/d3/download/d3-7.9.0.tgz#579e7acb3d749caf8860bd1741ae8d371070cd5d"
+  integrity sha1-V556yz10nK+IYL0XQa6NNxBwzV0=
+  dependencies:
+    d3-array "3"
+    d3-axis "3"
+    d3-brush "3"
+    d3-chord "3"
+    d3-color "3"
+    d3-contour "4"
+    d3-delaunay "6"
+    d3-dispatch "3"
+    d3-drag "3"
+    d3-dsv "3"
+    d3-ease "3"
+    d3-fetch "3"
+    d3-force "3"
+    d3-format "3"
+    d3-geo "3"
+    d3-hierarchy "3"
+    d3-interpolate "3"
+    d3-path "3"
+    d3-polygon "3"
+    d3-quadtree "3"
+    d3-random "3"
+    d3-scale "4"
+    d3-scale-chromatic "3"
+    d3-selection "3"
+    d3-shape "3"
+    d3-time "3"
+    d3-time-format "4"
+    d3-timer "3"
+    d3-transition "3"
+    d3-zoom "3"
+
+dagre-d3-es@7.0.11:
+  version "7.0.11"
+  resolved "http://r.npm.sankuai.com/dagre-d3-es/download/dagre-d3-es-7.0.11.tgz#2237e726c0577bfe67d1a7cfd2265b9ab2c15c40"
+  integrity sha1-IjfnJsBXe/5n0afP0iZbmrLBXEA=
+  dependencies:
+    d3 "^7.9.0"
+    lodash-es "^4.17.21"
+
+dayjs@^1.11.10:
+  version "1.11.13"
+  resolved "http://r.npm.sankuai.com/dayjs/download/dayjs-1.11.13.tgz#92430b0139055c3ebb60150aa13e860a4b5a366c"
+  integrity sha1-kkMLATkFXD67YBUKoT6GCktaNmw=
+
 debug@2.6.9:
   version "2.6.9"
   resolved "http://r.npm.sankuai.com/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -1614,7 +2272,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.1.0, debug@^4.3.1, debug@^4.3.4:
+debug@^4.1.0, debug@^4.3.1, debug@^4.3.4, debug@^4.3.6:
   version "4.3.7"
   resolved "http://r.npm.sankuai.com/debug/download/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
   integrity sha1-h5RbQVGgEddtlaGY1xEchlw2ClI=
@@ -1639,6 +2297,13 @@ define-lazy-prop@^2.0.0:
   version "2.0.0"
   resolved "http://r.npm.sankuai.com/define-lazy-prop/download/define-lazy-prop-2.0.0.tgz#3f7ae421129bcaaac9bc74905c98a0009ec9ee7f"
   integrity sha1-P3rkIRKbyqrJvHSQXJigAJ7J7n8=
+
+delaunator@5:
+  version "5.0.1"
+  resolved "http://r.npm.sankuai.com/delaunator/download/delaunator-5.0.1.tgz#39032b08053923e924d6094fe2cde1a99cc51278"
+  integrity sha1-OQMrCAU5I+kk1glP4s3hqZzFEng=
+  dependencies:
+    robust-predicates "^3.0.2"
 
 depd@2.0.0:
   version "2.0.0"
@@ -1671,6 +2336,18 @@ dom-accessibility-api@^0.6.3:
   version "0.6.3"
   resolved "http://r.npm.sankuai.com/dom-accessibility-api/download/dom-accessibility-api-0.6.3.tgz#993e925cc1d73f2c662e7d75dd5a5445259a8fd8"
   integrity sha1-mT6SXMHXPyxmLn113VpURSWaj9g=
+
+dompurify@*, dompurify@^3.2.1:
+  version "3.2.1"
+  resolved "http://r.npm.sankuai.com/dompurify/download/dompurify-3.2.1.tgz#d480972aeb1a59eb8ac47cba95558fbd72a0127b"
+  integrity sha1-1ICXKusaWeuKxHy6lVWPvXKgEns=
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
+
+"dompurify@^3.0.11 <3.1.7":
+  version "3.1.6"
+  resolved "http://r.npm.sankuai.com/dompurify/download/dompurify-3.1.6.tgz#43c714a94c6a7b8801850f82e756685300a027e2"
+  integrity sha1-Q8cUqUxqe4gBhQ+C51ZoUwCgJ+I=
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -2035,6 +2712,11 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "http://r.npm.sankuai.com/graceful-fs/download/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha1-QYPk6L8Iu24Fu7L30uDI9xLKQOM=
 
+hachure-fill@^0.5.2:
+  version "0.5.2"
+  resolved "http://r.npm.sankuai.com/hachure-fill/download/hachure-fill-0.5.2.tgz#d19bc4cc8750a5962b47fb1300557a85fcf934cc"
+  integrity sha1-0ZvEzIdQpZYrR/sTAFV6hfz5NMw=
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "http://r.npm.sankuai.com/has-flag/download/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
@@ -2120,6 +2802,13 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
+iconv-lite@0.6:
+  version "0.6.3"
+  resolved "http://r.npm.sankuai.com/iconv-lite/download/iconv-lite-0.6.3.tgz#a52f80bf38da1952eb5c681790719871a1a72501"
+  integrity sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3.0.0"
+
 immutable@^4.0.0:
   version "4.3.7"
   resolved "http://r.npm.sankuai.com/immutable/download/immutable-4.3.7.tgz#c70145fc90d89fb02021e65c84eb0226e4e5a381"
@@ -2142,6 +2831,16 @@ inherits@2, inherits@2.0.4, inherits@^2.0.3:
   version "2.0.4"
   resolved "http://r.npm.sankuai.com/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
+
+"internmap@1 - 2":
+  version "2.0.3"
+  resolved "http://r.npm.sankuai.com/internmap/download/internmap-2.0.3.tgz#6685f23755e43c524e251d29cbc97248e3061009"
+  integrity sha1-ZoXyN1XkPFJOJR0py8lySOMGEAk=
+
+internmap@^1.0.0:
+  version "1.0.1"
+  resolved "http://r.npm.sankuai.com/internmap/download/internmap-1.0.1.tgz#0017cc8a3b99605f0302f2b198d272e015e5df95"
+  integrity sha1-ABfMijuZYF8DAvKxmNJy4BXl35U=
 
 ipaddr.js@1.9.1:
   version "1.9.1"
@@ -2238,6 +2937,52 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+katex@^0.16.9:
+  version "0.16.11"
+  resolved "http://r.npm.sankuai.com/katex/download/katex-0.16.11.tgz#4bc84d5584f996abece5f01c6ad11304276a33f5"
+  integrity sha1-S8hNVYT5lqvs5fAcatETBCdqM/U=
+  dependencies:
+    commander "^8.3.0"
+
+khroma@^2.1.0:
+  version "2.1.0"
+  resolved "http://r.npm.sankuai.com/khroma/download/khroma-2.1.0.tgz#45f2ce94ce231a437cf5b63c2e886e6eb42bbbb1"
+  integrity sha1-RfLOlM4jGkN89bY8LohubrQru7E=
+
+kolorist@^1.8.0:
+  version "1.8.0"
+  resolved "http://r.npm.sankuai.com/kolorist/download/kolorist-1.8.0.tgz#edddbbbc7894bc13302cdf740af6374d4a04743c"
+  integrity sha1-7d27vHiUvBMwLN90CvY3TUoEdDw=
+
+langium@3.0.0:
+  version "3.0.0"
+  resolved "http://r.npm.sankuai.com/langium/download/langium-3.0.0.tgz#4938294eb57c59066ef955070ac4d0c917b26026"
+  integrity sha1-STgpTrV8WQZu+VUHCsTQyReyYCY=
+  dependencies:
+    chevrotain "~11.0.3"
+    chevrotain-allstar "~0.3.0"
+    vscode-languageserver "~9.0.1"
+    vscode-languageserver-textdocument "~1.0.11"
+    vscode-uri "~3.0.8"
+
+layout-base@^1.0.0:
+  version "1.0.2"
+  resolved "http://r.npm.sankuai.com/layout-base/download/layout-base-1.0.2.tgz#1291e296883c322a9dd4c5dd82063721b53e26e2"
+  integrity sha1-EpHilog8Miqd1MXdggY3IbU+JuI=
+
+layout-base@^2.0.0:
+  version "2.0.1"
+  resolved "http://r.npm.sankuai.com/layout-base/download/layout-base-2.0.1.tgz#d0337913586c90f9c2c075292069f5c2da5dd285"
+  integrity sha1-0DN5E1hskPnCwHUpIGn1wtpd0oU=
+
+local-pkg@^0.5.0:
+  version "0.5.1"
+  resolved "http://r.npm.sankuai.com/local-pkg/download/local-pkg-0.5.1.tgz#69658638d2a95287534d4c2fff757980100dbb6d"
+  integrity sha1-aWWGONKpUodTTUwv/3V5gBANu20=
+  dependencies:
+    mlly "^1.7.3"
+    pkg-types "^1.2.1"
+
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "http://r.npm.sankuai.com/locate-path/download/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
@@ -2251,6 +2996,11 @@ locate-path@^6.0.0:
   integrity sha1-VTIeswn+u8WcSAHZMackUqaB0oY=
   dependencies:
     p-locate "^5.0.0"
+
+lodash-es@4.17.21, lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "http://r.npm.sankuai.com/lodash-es/download/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha1-Q+YmxG5lkbd1C+srUBFzkMYJ4+4=
 
 lodash@^4.17.21:
   version "4.17.21"
@@ -2312,6 +3062,11 @@ markdown-to-jsx@^7.4.5:
   resolved "http://r.npm.sankuai.com/markdown-to-jsx/download/markdown-to-jsx-7.5.0.tgz#42ece0c71e842560a7d8bd9f81e7a34515c72150"
   integrity sha1-Quzgxx6EJWCn2L2fgeejRRXHIVA=
 
+marked@^13.0.2:
+  version "13.0.3"
+  resolved "http://r.npm.sankuai.com/marked/download/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
+  integrity sha1-XFtKXQGYBgx8m8bvlCCn/tMPgi0=
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "http://r.npm.sankuai.com/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -2328,6 +3083,33 @@ merge-descriptors@1.0.3:
   version "1.0.3"
   resolved "http://r.npm.sankuai.com/merge-descriptors/download/merge-descriptors-1.0.3.tgz#d80319a65f3c7935351e5cfdac8f9318504dbed5"
   integrity sha1-2AMZpl88eTU1Hlz9rI+TGFBNvtU=
+
+mermaid@^11.4.0:
+  version "11.4.0"
+  resolved "http://r.npm.sankuai.com/mermaid/download/mermaid-11.4.0.tgz#e510f45700ed4b31e1dc327b3a405ad9f6907ca3"
+  integrity sha1-5RD0VwDtSzHh3DJ7OkBa2faQfKM=
+  dependencies:
+    "@braintree/sanitize-url" "^7.0.1"
+    "@iconify/utils" "^2.1.32"
+    "@mermaid-js/parser" "^0.3.0"
+    "@types/d3" "^7.4.3"
+    "@types/dompurify" "^3.0.5"
+    cytoscape "^3.29.2"
+    cytoscape-cose-bilkent "^4.1.0"
+    cytoscape-fcose "^2.2.0"
+    d3 "^7.9.0"
+    d3-sankey "^0.12.3"
+    dagre-d3-es "7.0.11"
+    dayjs "^1.11.10"
+    dompurify "^3.0.11 <3.1.7"
+    katex "^0.16.9"
+    khroma "^2.1.0"
+    lodash-es "^4.17.21"
+    marked "^13.0.2"
+    roughjs "^4.6.6"
+    stylis "^4.3.1"
+    ts-dedent "^2.2.0"
+    uuid "^9.0.1"
 
 meshoptimizer@~0.18.1:
   version "0.18.1"
@@ -2380,6 +3162,16 @@ minimist@^1.2.6:
   version "1.2.8"
   resolved "http://r.npm.sankuai.com/minimist/download/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
   integrity sha1-waRk52kzAuCCoHXO4MBXdBrEdyw=
+
+mlly@^1.7.1, mlly@^1.7.2, mlly@^1.7.3:
+  version "1.7.3"
+  resolved "http://r.npm.sankuai.com/mlly/download/mlly-1.7.3.tgz#d86c0fcd8ad8e16395eb764a5f4b831590cee48c"
+  integrity sha1-2GwPzYrY4WOV63ZKX0uDFZDO5Iw=
+  dependencies:
+    acorn "^8.14.0"
+    pathe "^1.1.2"
+    pkg-types "^1.2.1"
+    ufo "^1.5.4"
 
 ms@2.0.0:
   version "2.0.0"
@@ -2472,10 +3264,20 @@ p-try@^2.0.0:
   resolved "http://r.npm.sankuai.com/p-try/download/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=
 
+package-manager-detector@^0.2.0:
+  version "0.2.5"
+  resolved "http://r.npm.sankuai.com/package-manager-detector/download/package-manager-detector-0.2.5.tgz#d72296f18f8334516531d9d2a2b088c795a21ea6"
+  integrity sha1-1yKW8Y+DNFFlMdnSorCIx5WiHqY=
+
 parseurl@~1.3.3:
   version "1.3.3"
   resolved "http://r.npm.sankuai.com/parseurl/download/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
+
+path-data-parser@0.1.0, path-data-parser@^0.1.0:
+  version "0.1.0"
+  resolved "http://r.npm.sankuai.com/path-data-parser/download/path-data-parser-0.1.0.tgz#8f5ba5cc70fc7becb3dcefaea08e2659aba60b8c"
+  integrity sha1-j1ulzHD8e+yz3O+uoI4mWaumC4w=
 
 path-exists@^4.0.0:
   version "4.0.0"
@@ -2496,6 +3298,11 @@ path-to-regexp@0.1.10:
   version "0.1.10"
   resolved "http://r.npm.sankuai.com/path-to-regexp/download/path-to-regexp-0.1.10.tgz#67e9108c5c0551b9e5326064387de4763c4d5f8b"
   integrity sha1-Z+kQjFwFUbnlMmBkOH3kdjxNX4s=
+
+pathe@^1.1.2:
+  version "1.1.2"
+  resolved "http://r.npm.sankuai.com/pathe/download/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
+  integrity sha1-bEy0epRWkuSKHd1uQJTRcFFkN+w=
 
 pathval@^2.0.0:
   version "2.0.0"
@@ -2518,6 +3325,28 @@ pkg-dir@^4.1.0:
   integrity sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM=
   dependencies:
     find-up "^4.0.0"
+
+pkg-types@^1.2.1:
+  version "1.2.1"
+  resolved "http://r.npm.sankuai.com/pkg-types/download/pkg-types-1.2.1.tgz#6ac4e455a5bb4b9a6185c1c79abd544c901db2e5"
+  integrity sha1-asTkVaW7S5phhcHHmr1UTJAdsuU=
+  dependencies:
+    confbox "^0.1.8"
+    mlly "^1.7.2"
+    pathe "^1.1.2"
+
+points-on-curve@0.2.0, points-on-curve@^0.2.0:
+  version "0.2.0"
+  resolved "http://r.npm.sankuai.com/points-on-curve/download/points-on-curve-0.2.0.tgz#7dbb98c43791859434284761330fa893cb81b4d1"
+  integrity sha1-fbuYxDeRhZQ0KEdhMw+ok8uBtNE=
+
+points-on-path@^0.2.1:
+  version "0.2.1"
+  resolved "http://r.npm.sankuai.com/points-on-path/download/points-on-path-0.2.1.tgz#553202b5424c53bed37135b318858eacff85dd52"
+  integrity sha1-VTICtUJMU77TcTWzGIWOrP+F3VI=
+  dependencies:
+    path-data-parser "0.1.0"
+    points-on-curve "0.2.0"
 
 polished@^4.2.2:
   version "4.3.1"
@@ -2731,6 +3560,11 @@ resolve@^1.22.1, resolve@^1.22.8:
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
+robust-predicates@^3.0.2:
+  version "3.0.2"
+  resolved "http://r.npm.sankuai.com/robust-predicates/download/robust-predicates-3.0.2.tgz#d5b28528c4824d20fc48df1928d41d9efa1ad771"
+  integrity sha1-1bKFKMSCTSD8SN8ZKNQdnvoa13E=
+
 rollup@^4.20.0:
   version "4.24.0"
   resolved "http://r.npm.sankuai.com/rollup/download/rollup-4.24.0.tgz#c14a3576f20622ea6a5c9cad7caca5e6e9555d05"
@@ -2756,6 +3590,21 @@ rollup@^4.20.0:
     "@rollup/rollup-win32-x64-msvc" "4.24.0"
     fsevents "~2.3.2"
 
+roughjs@^4.6.6:
+  version "4.6.6"
+  resolved "http://r.npm.sankuai.com/roughjs/download/roughjs-4.6.6.tgz#1059f49a5e0c80dee541a005b20cc322b222158b"
+  integrity sha1-EFn0ml4MgN7lQaAFsgzDIrIiFYs=
+  dependencies:
+    hachure-fill "^0.5.2"
+    path-data-parser "^0.1.0"
+    points-on-curve "^0.2.0"
+    points-on-path "^0.2.1"
+
+rw@1:
+  version "1.3.3"
+  resolved "http://r.npm.sankuai.com/rw/download/rw-1.3.3.tgz#3f862dfa91ab766b14885ef4d01124bfda074fb4"
+  integrity sha1-P4Yt+pGrdmsUiF700BEkv9oHT7Q=
+
 rxjs@^7.4.0:
   version "7.8.1"
   resolved "http://r.npm.sankuai.com/rxjs/download/rxjs-7.8.1.tgz#6f6f3d99ea8044291efd92e7c7fcf562c4057543"
@@ -2768,7 +3617,7 @@ safe-buffer@5.2.1:
   resolved "http://r.npm.sankuai.com/safe-buffer/download/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
 
-"safer-buffer@>= 2.1.2 < 3":
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
   resolved "http://r.npm.sankuai.com/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
@@ -3031,6 +3880,11 @@ strip-indent@^4.0.0:
   dependencies:
     min-indent "^1.0.1"
 
+stylis@^4.3.1:
+  version "4.3.4"
+  resolved "http://r.npm.sankuai.com/stylis/download/stylis-4.3.4.tgz#ca5c6c4a35c4784e4e93a2a24dc4e9fa075250a4"
+  integrity sha1-ylxsSjXEeE5Ok6KiTcTp+gdSUKQ=
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "http://r.npm.sankuai.com/supports-color/download/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -3078,6 +3932,11 @@ tiny-invariant@^1.3.1, tiny-invariant@^1.3.3:
   version "1.3.3"
   resolved "http://r.npm.sankuai.com/tiny-invariant/download/tiny-invariant-1.3.3.tgz#46680b7a873a0d5d10005995eb90a70d74d60127"
   integrity sha1-RmgLeoc6DV0QAFmV65CnDXTWASc=
+
+tinyexec@^0.3.0:
+  version "0.3.1"
+  resolved "http://r.npm.sankuai.com/tinyexec/download/tinyexec-0.3.1.tgz#0ab0daf93b43e2c211212396bdb836b468c97c98"
+  integrity sha1-CrDa+TtD4sIRISOWvbg2tGjJfJg=
 
 tinyrainbow@^1.2.0:
   version "1.2.0"
@@ -3147,6 +4006,11 @@ typescript@^5.6.3:
   version "5.6.3"
   resolved "http://r.npm.sankuai.com/typescript/download/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
   integrity sha1-XzRJ4xydlP67F94DzAgd1W2B21s=
+
+ufo@^1.5.4:
+  version "1.5.4"
+  resolved "http://r.npm.sankuai.com/ufo/download/ufo-1.5.4.tgz#16d6949674ca0c9e0fbbae1fa20a71d7b1ded754"
+  integrity sha1-FtaUlnTKDJ4Pu64fogpx17He11Q=
 
 undici-types@~6.19.2:
   version "6.19.8"
@@ -3224,7 +4088,7 @@ utils-merge@1.0.1:
   resolved "http://r.npm.sankuai.com/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^9.0.0:
+uuid@^9.0.0, uuid@^9.0.1:
   version "9.0.1"
   resolved "http://r.npm.sankuai.com/uuid/download/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
   integrity sha1-4YjUyIU8xyIiA5LEJM1jfzIpPzA=
@@ -3256,6 +4120,41 @@ vite@^5.4.9:
     rollup "^4.20.0"
   optionalDependencies:
     fsevents "~2.3.3"
+
+vscode-jsonrpc@8.2.0:
+  version "8.2.0"
+  resolved "http://r.npm.sankuai.com/vscode-jsonrpc/download/vscode-jsonrpc-8.2.0.tgz#f43dfa35fb51e763d17cd94dcca0c9458f35abf9"
+  integrity sha1-9D36NftR52PRfNlNzKDJRY81q/k=
+
+vscode-languageserver-protocol@3.17.5:
+  version "3.17.5"
+  resolved "http://r.npm.sankuai.com/vscode-languageserver-protocol/download/vscode-languageserver-protocol-3.17.5.tgz#864a8b8f390835572f4e13bd9f8313d0e3ac4bea"
+  integrity sha1-hkqLjzkINVcvThO9n4MT0OOsS+o=
+  dependencies:
+    vscode-jsonrpc "8.2.0"
+    vscode-languageserver-types "3.17.5"
+
+vscode-languageserver-textdocument@~1.0.11:
+  version "1.0.12"
+  resolved "http://r.npm.sankuai.com/vscode-languageserver-textdocument/download/vscode-languageserver-textdocument-1.0.12.tgz#457ee04271ab38998a093c68c2342f53f6e4a631"
+  integrity sha1-RX7gQnGrOJmKCTxowjQvU/bkpjE=
+
+vscode-languageserver-types@3.17.5:
+  version "3.17.5"
+  resolved "http://r.npm.sankuai.com/vscode-languageserver-types/download/vscode-languageserver-types-3.17.5.tgz#3273676f0cf2eab40b3f44d085acbb7f08a39d8a"
+  integrity sha1-MnNnbwzy6rQLP0TQhay7fwijnYo=
+
+vscode-languageserver@~9.0.1:
+  version "9.0.1"
+  resolved "http://r.npm.sankuai.com/vscode-languageserver/download/vscode-languageserver-9.0.1.tgz#500aef82097eb94df90d008678b0b6b5f474015b"
+  integrity sha1-UArvggl+uU35DQCGeLC2tfR0AVs=
+  dependencies:
+    vscode-languageserver-protocol "3.17.5"
+
+vscode-uri@~3.0.8:
+  version "3.0.8"
+  resolved "http://r.npm.sankuai.com/vscode-uri/download/vscode-uri-3.0.8.tgz#1770938d3e72588659a172d0fd4642780083ff9f"
+  integrity sha1-F3CTjT5yWIZZoXLQ/UZCeACD/58=
 
 webpack-virtual-modules@^0.6.2:
   version "0.6.2"
